@@ -13,10 +13,6 @@ export const { auth, handlers, signIn, signOut } = NextAuth({
         newUser: "/admin",
     },
     callbacks: {
-        authorized: async ({ auth }) => {
-            console.log(auth)
-            return auth !== null
-        },
         signIn: async ({ user }) => {
             try {
                 const wl = await prisma.whitelist.findFirstOrThrow({ where: { email: user.email || "" } })
