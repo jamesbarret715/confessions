@@ -9,7 +9,9 @@ export const metadata: Metadata = {
     description: "Submit your confessions anonymously.",
 };
 
-const geist = Geist()
+const geist = Geist({
+    subsets: ["latin"]
+})
 
 export default function Layout({
     children,
