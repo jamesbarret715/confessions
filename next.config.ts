@@ -1,14 +1,16 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-    rewrites: async () => [
+    redirects: async () => [
         {
             source: "/",
-            destination: "/submit"
+            destination: "/submit",
+            permanent: true
         },
         {
             source: "/admin",
-            destination: "/admin/home"
+            destination: "/admin/home",
+            permanent: true
         }
     ]
 };
