@@ -14,7 +14,7 @@ export default function Denied() {
                 <CardHeader>
                     <CardTitle>Access Denied</CardTitle>
                     <CardDescription>
-                        You're not on the list, mate.
+                        You&apos;re not on the list, mate.
                     </CardDescription>
                 </CardHeader>
                 <CardContent>

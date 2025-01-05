@@ -1,12 +1,11 @@
 import { ReactNode } from "react";
-import { redirect } from "next/navigation";
 
 import { Button, ButtonProps } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 
 import { FaGithub, FaGoogle } from "react-icons/fa";
 
-import { auth, signIn } from "@/lib/auth";
+import { signIn } from "@/lib/auth";
 
 function LoginButton(
     { children, provider, ...props }:

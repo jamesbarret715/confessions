@@ -6,12 +6,9 @@ import { Button } from "@/components/ui/button";
 import { DropdownMenu, DropdownMenuTrigger, DropdownMenuContent, DropdownMenuItem, DropdownMenuLabel, DropdownMenuSeparator } from "@/components/ui/dropdown-menu";
 
 import { useState } from "react";
-import { useRouter } from "next/navigation";
-
 import { useSession, signOut } from "next-auth/react"
 
 export default function UserNav() {
-    const router = useRouter();
 
     const { data } = useSession();
     const user = data?.user
@@ -46,7 +43,7 @@ export default function UserNav() {
                     <AlertDialogHeader>
                         <AlertDialogTitle>Log Out</AlertDialogTitle>
                         <AlertDialogDescription>
-                            Are you sure you want to log out? You'll have to login with
+                            Are you sure you want to log out? You&apos;ll have to login with
                             your provider again to access the admin dashboard.
                         </AlertDialogDescription>
                     </AlertDialogHeader>

@@ -20,7 +20,7 @@ const schema = z.object({
 })
 
 
-export default function () {
+export default function Submit() {
     const { toast } = useToast();
 
     const form = useForm<z.infer<typeof schema>>({

@@ -17,7 +17,7 @@ export default function MainNav({
         { title: "Settings", route: "/admin/settings" }
     ]
 
-    return <nav className={cn("flex items-center justify-start space-x-4 lg:space-x-6", className)}>
+    return <nav className={cn("flex items-center justify-start space-x-4 lg:space-x-6", className)} {...props}>
         {pages.map(({ title, route }) =>
             <Link key={title} href={route} className={cn(
                 "text-sm font-medium hover:text-primary transition-colors",
